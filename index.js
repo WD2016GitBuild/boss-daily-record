@@ -24,8 +24,9 @@ app.get('/list', function (req, res) {
 	connection.connect();
 	var datas = null;
 	connection.query("select * from _order", function(err, rows) {
-		if (err) 
+		if (err)
 			throw err;
+		console.log(rows);
   		res.end(JSON.stringify({result:rows}));
 		connection.end();
 	});
