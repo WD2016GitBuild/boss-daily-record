@@ -3,3 +3,7 @@
 
 # 学习地址
 ## https://github.com/alsotang/node-lessons
+
+
+# sass 指令
+> sass --watch style.scss:style.css --sourcemap
